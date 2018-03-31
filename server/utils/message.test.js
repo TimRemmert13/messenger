@@ -22,7 +22,6 @@ describe('generateMessageLocation', () => {
     var url = 'https://google.com/maps?q=15,19';
     var message = generateLocationMessage(from, latitude, longitude);
 
-    expect(message.createdAt).toBeA('number');
     expect(message).toInclude({from, url});
   });
 });
